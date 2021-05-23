@@ -45,6 +45,7 @@ namespace JWTServices.Controllers
             var tokenRead = handler1.ReadJwtToken(jwt_token);
             var name = tokenRead.Claims.Where(x => x.Type == "userId").FirstOrDefault().Value.ToString();
             return name;
+            //xxxxx
             //https://www.scottbrady91.com/C-Sharp/JSON-Web-Encryption-JWE-in-dotnet-Core
         }
 
